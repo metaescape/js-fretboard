@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link
+      href="https://fonts.loli.net/css?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.loli.net/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>fretboard</title>
+  </head>
+  <body>
+    <div class="settings">
+      <div class="setting-block">
+        <label for="instrument-selector">Instrument:</label>
+        <select
+          name="instrument-selector"
+          class="form__input"
+          id="instrument-selector"
+        ></select>
+      </div>
+      <div class="accidental-selector setting-block">
+        <input
+          type="radio"
+          class="acc-select"
+          id="flats"
+          name="accidentals"
+          value="flats"
+          checked
+        />
+        <label for="flats">♭</label>
+        <input
+          type="radio"
+          class="acc-select"
+          id="sharps"
+          name="accidentals"
+          value="sharps"
+        />
+        <label for="sharps">♯</label>
+      </div>
+      <div class="setting-block">
+        <label for="number-of-frets">Number of frets: </label>
+        <input
+          type="number"
+          class="form__input"
+          id="number-of-frets"
+          min="5"
+          max="30"
+          value="20"
+        />
+      </div>
+      <div class="setting-block">
+        <label for="scale-selector">Scales:</label>
+        <select
+          name="scale-selector"
+          class="form__input"
+          id="scale-selector"
+        ></select>
+      </div>
+    </div>
+    <div class="fretboard"></div>
+    <div class="note-name-section"></div>
+
+    <!-- add a link -->
+
+    <div class="footer">
+      <p>
+        Github:
+        <a href="https://github.com/metaescape/js-fretboard">辅助记忆指板</a>
+      </p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
