@@ -25,7 +25,7 @@
 }
 
 body {
-  background-color: #353535;
+  background-color: #272934;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -38,15 +38,15 @@ body {
   padding: 20px;
   border-bottom: 1px solid #444;
   background-color: #161717;
-  border-radius: 5px;
+  border-radius: 2rem;
   transition: all 0.5s, transform 1ms;
   justify-content: space-evenly;
 }
 
 .form__input {
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: var(--color-light--3);
-  padding: 2px;
+  padding: 5px;
 }
 
 .form__input:focus {
